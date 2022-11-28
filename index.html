@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="gradient" style="margin-top:10rem;">
+
+        <div id="btn_lixeira" style="border-style:solid; width:195px; margin-left:60%; cursor:pointer; padding:10px;">
+            <span id="span_lixeira_to_do" style="font-weight:bold;">Acessar lixeira</span>
+            <img id="img_lixeira_to_do" src="img/trash.png" alt="ícone de uma lixeira" style="width:30px;height:30px;">
+        </div>
+
+        <div class="main_container" style="margin-top:0;display: block;">
+
+                <header>
+                    <h1 id="main_title" class="main_title">To Do </h1>
+                </header>
+
+                <br/>
+
+                <input id="create_input" type="text" placeholder="Clique enter pada adicionar uma tarefa." required>
+
+                <br/>
+                <br/>
+
+                <div class="main" id="main" style="width:700px;">
+                    
+                </div>
+        </div>  
+
+        <div class="lixeira main_container" style="margin-top:0;display: none;">
+
+            <header>
+                <h1 id="main_title" class="main_title">Lixeira </h1>
+            </header>
+
+            <br/>
+            <div class="lista_tarefas main" id="lista_tarefas" style="width:700px;">
+                    
+            </div>
+
+            <div id="modal_container" class="modal_container" 
+                style="
+                    width: 100vw; height: 100vh;
+                    position:fixed; 
+                    top:0px;left:0px; color:white;
+                    background: rgba(0, 0, 0, 0.5);
+                    z-index: 3000;
+                    display:none;
+            ">
+               
+            </div>
+
+            
+        </div>
+
+    </div>  
+    <br/>
+
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
