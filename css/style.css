@@ -22,7 +22,7 @@ body{
     color: #015fa9;
 }
 
-#create_input{
+#main_input{
     width: 26rem;
     height: 30px;
     border-radius: 4px;
@@ -35,7 +35,7 @@ body{
     border:solid 4px red;
 }
 
-#create_input::placeholder{
+#main_input::placeholder{
     font-size: 16px;
 }
 

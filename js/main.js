@@ -1,4 +1,4 @@
-let main_input = document.getElementById('create_input');
+let main_input = document.getElementById('main_input');
 let list = document.getElementById('main');
 let modalContainer = document.getElementById('modal_container');
 let lixeira = document.querySelector('.lixeira');
