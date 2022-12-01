@@ -257,3 +257,17 @@ function addTasksInTrash(task){
     // cBox.checked = true;
     div.append(task);
 }
+
+let tempo = -1;
+let setinterval = setInterval(() => {
+    tempo+= 1;
+    console.log(tempo);
+    if (tempo == 7200){
+        console.log('Passou-se 2 horas');
+        let listTrash = lixeira.querySelectorAll('.to_do');
+        listTrash.forEach(item => {
+            item.remove();
+        });
+        tempo = -1;
+    }
+},999);
