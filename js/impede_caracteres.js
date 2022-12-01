@@ -9,7 +9,7 @@ function myCheckchar(e, pattern){
     }
 }
 
-let exp = /[!@#$%¨&*()"'ªº;:+_-]/ig;
+let exp = /[@#$%¨&*()"'ªº;+_-]/ig;
 input.addEventListener('keypress', (e) => {
    if (myCheckchar(e, exp)) {
         alert('Não permitido digitar caracteres especiais.')
