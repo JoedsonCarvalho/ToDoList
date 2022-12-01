@@ -258,16 +258,18 @@ function addTasksInTrash(task){
     div.append(task);
 }
 
-let tempo = -1;
-let setinterval = setInterval(() => {
-    tempo+= 1;
-    console.log(tempo);
-    if (tempo == 7200){
-        console.log('Passou-se 2 horas');
-        let listTrash = lixeira.querySelectorAll('.to_do');
-        listTrash.forEach(item => {
-            item.remove();
-        });
-        tempo = -1;
-    }
-},999);
+function removeItensDaLixeira(segundos){
+    let tempo = -1;
+    let setinterval = setInterval(() => {
+        tempo+= 1;
+        if (tempo == segundos){
+            console.log('Passou-se 2 horas');
+            let listTrash = lixeira.querySelectorAll('.to_do');
+            listTrash.forEach(item => {
+                item.remove();
+            });
+            tempo = -1;
+        }
+    },999);
+}
+removeItensDaLixeira(7200);
